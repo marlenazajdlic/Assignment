@@ -6,7 +6,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
-import time
 delay = 15
 
 
@@ -257,8 +256,7 @@ def step_impl(context):
     zapamietaj_button = context.browser.find_element_by_xpath('//button[contains(text(), \'Zapamiętaj\')]')
     zapamietaj_button.click()
 
-    time.sleep(20)
-
+    
 use_step_matcher('parse')
 
 
